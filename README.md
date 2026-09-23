@@ -58,6 +58,9 @@ calls. The full exception chain is captured in the Surefire output.
 
 ## Source finding
 
+See [ANALYSIS.md](ANALYSIS.md) for the debugger-confirmed parameter lifecycle,
+the exact point where type information is lost, and source permalinks.
+
 Inspection of the released 5.0.1 sources identifies the following path:
 
 1. `DatabaseCall.translate(...)` preserves type information by representing a
